@@ -35,3 +35,4 @@ int main(){
     printf("Heads: %d, Tails: %d\n", cnt_head, cnt_tail);
     if(cnt_head > cnt_tail) printf("%s won!\n", name);
     else printf("%s lost!\n", name);
+}
