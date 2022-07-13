@@ -7,7 +7,12 @@
 int main(){
 
     int num, i, cnt_head = 0, cnt_tail = 0;
+    char name[100];
     unsigned int seed;
+
+    printf("Who are you? \n");
+    scanf("%s", &name);
+    printf("Hello, %s!\n", name);
 
     seed = (unsigned int)time(NULL);
     srand(seed);
@@ -28,4 +33,5 @@ int main(){
     }
 
     printf("Heads: %d, Tails: %d\n", cnt_head, cnt_tail);
-}
+    if(cnt_head > cnt_tail) printf("%s won!\n", name);
+    else printf("%s lost!\n", name);
